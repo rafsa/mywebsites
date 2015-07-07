@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="frotend.master.cs" Inherits="MasterPage_frotend" %>
+
+
+
+<%@ Register src="/Controls/WebUserControl.ascx" tagname="WebUserControl" tagprefix="uc1" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="~/Scripts/jquery-2.1.0.min.js" />
+
+
+            </Scripts>
+    </asp:ScriptManager>
+    <div id="PageWrapper">
+<header><a href="/"></a></header>
+<nav>
+    <asp:Menu ID="Menu1" runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False">
+    </asp:Menu>
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+        </nav>
+<section id="MainContent">
+    <asp:SiteMapPath ID="SiteMapPath1" runat="server" > </asp:SiteMapPath> <br /> <br />
+    <h1> Hi there visitor, welcome to my personal website </h1>
+<asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+    
+</asp:ContentPlaceHolder>
+</section>
+
+<footer>
+    
+    <asp:LoginName ID="LoginName1" runat="server" FormatString="Logged in as {0}" />
+        <asp:LoginView ID="LoginView1" runat="server">
+            <LoggedInTemplate>
+                (<asp:LoginStatus ID="LoginStatus1" runat="server" />)
+            </LoggedInTemplate>
+    </asp:LoginView>
+        </footer>
+</div>
+    </form>
+</body>
+</html>

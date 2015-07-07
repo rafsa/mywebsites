@@ -1,0 +1,154 @@
+﻿*
+{
+  
+  font-family: Arial, Sans-Serif;
+}
+
+body
+{
+  
+  margin: 0;
+  background-color: #cccccc;
+}
+
+a
+{
+ 
+  text-decoration: none;
+  color: #0760B2;
+}
+
+  a:hover
+  {
+    
+    text-decoration: underline;
+  }
+
+h1 {
+    
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    color: #008000;
+}
+
+p {
+    font-size: 14px;
+    color: #00FFFF;
+    margin-top: 10px;
+    font-weight: bolder;
+    background-color: #0000FF;
+    background-image: url('../../Images/a7d49c1347b5c37fd163e572a75359703.jpg');
+}
+
+#PageWrapper
+{
+  
+  width: 844px;
+  background-color: #5487c0;
+  margin: auto;
+}
+
+header {
+    width: 844px;
+    height: 86px;
+    background-image: url('../../Images/images.jpg');
+}
+
+  header a
+  {
+    
+    width: 844px;
+    height: 86px;
+    display: block;
+  }
+
+nav {
+    width: auto;
+    height: auto;
+    padding-top: inherit;
+    padding-left: inherit;
+}
+
+  nav a
+  {
+    
+    color: #fff;
+  }
+
+.MainMenu {
+    border: thick solid #0000FF;
+    width: auto;
+    height: auto;
+    background-color: #00FFFF;
+}
+
+  .MainMenu ul li
+  {
+    
+    width: 200px;
+  }
+
+section#MainContent {
+    font-size: 0.8em;
+    width: 659px;
+    border-left: 1px solid white;
+    border-right: 2px solid white;
+    float: left;
+    background-color: #e1e1e1;
+    padding: 10px;
+    height: auto;
+}
+
+
+footer {
+    width: auto;
+    clear: both;
+    height: auto;
+    background-color: #008000;
+    color: White;
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: bold;
+    line-height: 37px;
+}
+
+
+nav {
+    background-image: url('../../Images/images (1).jpg');
+}
+
+ul.level1 {
+    font-size: 14px;
+    font-weight: bold;
+    height: 19px;
+    line-height: 19px;
+}
+    ul.level1.selected {
+    background-color: #00FFFF;
+}
+a.level1 {
+    padding-left: 5px!important;
+}
+a.level2 {
+    background-color: #008080;
+    padding-left: 8px;
+}
+
+    a.level1:hover, a.level2:hover {
+    background-color: #000080;
+}
+img {
+    border:0;
+}
+.Errormessage {
+    color: #FF0000;
+}
+.pleasewait {
+    background-image: url('../../Images/pleasewait.gif');
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 32px;
+    padding-left: 40px;
+    line-height: 32px;
+}
